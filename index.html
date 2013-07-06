@@ -66,8 +66,12 @@
 		<h4>David Luecke</h4>
 		david[@]bitovi.com <br>
 		<a href="http://www.twitter.com/daffl">@daffl</a>
-
 	</div>
+
+	<p class="centered">
+		<h3><a href="http://daffl.github.com/js-intro">daffl.github.com/js-intro</a> (Slides)</h3>
+		<h3><a href="https://github.com/daffl/js-intro/archive/gh-pages.zip">github.com/daffl/js-intro/archive/gh-pages.zip</a><br/>(Download)</h3>
+	</p>
 </article>
 
 <!-- SLIDE: Course Outline -->
@@ -218,6 +222,25 @@
 		<a href="http://filezilla-project.org/" target="_blank">FileZilla</a>
 		is good when you're more advanced.
 	</p>
+</article>
+
+<!-- SLIDE: MINI-EXERCISE #1 -->
+<article class='slide slide-list'>
+	<h2>Wake-up-exercise (10 minutes)</h2>
+
+	<p>Lets get set up!</p>
+
+	<ol>
+		<li>Download and install SublimeText</li>
+		<li>Download and install Dropbox</li>
+		<li>Open SublimeText, create a new file and copy the HTML from JSBin</li>
+		<li>Add some CSS and JavaScript<br />
+			<span class="sidenote">Note: JavaScript goes in a &lt;script&gt;&lt;/script&gt; and CSS in a
+			&lt;style&gt;&lt;/style&gt; tag</span>
+		</li>
+		<li>Save the file as <strong>index.html</strong> to you Dropbox public folder and share
+		the link with the world.</li>
+	</ol>
 </article>
 
 <!-- new slide -->
@@ -772,17 +795,17 @@ var isSunday = true;
 	</div>
 	<br/>
 	<textarea class='coder-editor'>
-		<script>
-			var 3
-			hundred = 300;
-			console.log(3
-			hundred
-			)
-			;
+<script>
+	var 3
+	hundred = 300;
+	console.log(3
+	hundred
+	)
+	;
 
-			//var $1000 = 1000;
-			//document.write($1000);
-		</script>
+	//var $1000 = 1000;
+	//document.write($1000);
+</script>
 	</textarea>
 	<span class="marker">*</span>
 </article>
@@ -840,29 +863,6 @@ var isSunday = true;
 		<br/>
 		<strong><span class="var">var</span> x;</strong> &larr; Not clear at all.
 	</p>
-</article>
-
-<!-- SLIDE:  WHITESPACE -->
-<article class='slide slide-list'>
-	<h2>Whitespace in JavaScript</h2>
-
-	<p>
-		Whitespace refers to blank characters and includes space characters, tabs and line breaks.
-	</p>
-
-	<p>JavaScript ignores whitespace except when used in a string.</p>
-<pre class="prettyprint">
-var name=&quot;Christina&quot;;
-//same as 
-var name = &quot;Christina&quot;;
-</pre>
-	<textarea class='coder-editor coder-editor-full'>
-<script>
-	alert("Whitespace     in    a    string.");
-	document.write("Whitespace     in    a    string.");
-</script>
-	</textarea>
-	<span class="marker">*</span>
 </article>
 
 <!-- SLIDE: COMMENTS -->
@@ -950,9 +950,9 @@ want to write a longer message */
 	<p>The arithmetic operators in JavaScript are (+) for addition, (-) for subtraction, (*) for multiplication and (\)
 		for division.</p>
 	<textarea class='coder-editor'>
-		<script>
-			document.write(20 + 20);
-		</script>
+<script>
+	document.write(20 + 20);
+</script>
 	</textarea>
 	<span class="marker">*</span>
 </article>
@@ -1584,46 +1584,46 @@ if (condition) {<br>
 
 	<p><code> if ( condition ) { ... } </code></p>
 	<textarea class="coder-editor coder-editor-full">
-		<script>
-			// Straight Booleans
-			if (true) {
-				document.write("#1 this works. <br />");
-			}
-			if (false) {
-				document.write("#2 will not work. <br />");
-			}
+<script>
+	// Straight Booleans
+	if (true) {
+		document.write("#1 this works. <br />");
+	}
+	if (false) {
+		document.write("#2 will not work. <br />");
+	}
 
-			// Booleans via variables
-			var isSunday = true;
-			var isSaturday = false;
-			if (isSunday == true) {
-				document.write("#5 Yeah, laundry day! <br />");
-			}
-			if (isSaturday == true) {
-				document.write("#6 Nope, you can't go back in time! <br />");
-			}
+	// Booleans via variables
+	var isSunday = true;
+	var isSaturday = false;
+	if (isSunday == true) {
+		document.write("#5 Yeah, laundry day! <br />");
+	}
+	if (isSaturday == true) {
+		document.write("#6 Nope, you can't go back in time! <br />");
+	}
 
-			// Numbers
-			if (1 &lt; 2) {
-				document.write("#3 workks. <br />");
-			}
-			if (2 &lt; 1) {
-				document.write("#4 won't work. <br />");
-			}
+	// Numbers
+	if (1 &lt; 2) {
+		document.write("#3 workks. <br />");
+	}
+	if (2 &lt; 1) {
+		document.write("#4 won't work. <br />");
+	}
 
-			// Strings
-			var emptyString = "";
-			var filledString = "Woot! Conditionals!";
-			if (emptyString == "") {
-				document.write("#7 Yep, the string was empty. <br />");
-			}
-			if (filledString == "") {
-				document.write("#8 won't work. <br />");
-			}
-			if (filledString == "Woot! Conditionals!") {
-				document.write("#9 Code strong. <br />");
-			}
-		</script>
+	// Strings
+	var emptyString = "";
+	var filledString = "Woot! Conditionals!";
+	if (emptyString == "") {
+		document.write("#7 Yep, the string was empty. <br />");
+	}
+	if (filledString == "") {
+		document.write("#8 won't work. <br />");
+	}
+	if (filledString == "Woot! Conditionals!") {
+		document.write("#9 Code strong. <br />");
+	}
+</script>
 	</textarea>
 </article>
 
@@ -2015,6 +2015,7 @@ Postal Code:
 	<h1>Lunch time!</h1>
 
 	<p>Come back for 2:00pm</p>
+	<p>And we will move on to <a href="index2.html">Part 2</a></p>
 </article>
 
 </div>
